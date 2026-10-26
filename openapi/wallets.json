@@ -12658,9 +12658,19 @@
             "description": "200",
             "content": {
               "application/json": {
-                "examples": {
-                  "Result": {
-                    "value": "{\n  \"status\": \"success\",\n  \"message\": \"Successful\",\n  \"data\": {\n    \"id\": \"fxxwu3kc\",\n    \"sn\": \"QDXR3E7XPRQ\",\n    \"email\": \"teste@gmail.com\",\n    \"reference\": null,\n    \"first_name\": \"test\",\n    \"last_name\": \"user\",\n    \"display_name\": null,\n    \"created_at\": \"2021-11-15T19:33:03.725+01:00\",\n    \"updated_at\": \"2021-11-15T19:33:05.753+01:00\"\n  }\n}"
+                "example": {
+                  "status": "success",
+                  "message": "Successful",
+                  "data": {
+                    "id": "fxxwu3kc",
+                    "sn": "QDXR3E7XPRQ",
+                    "email": "teste@gmail.com",
+                    "reference": null,
+                    "first_name": "test",
+                    "last_name": "user",
+                    "display_name": null,
+                    "created_at": "2021-11-15T19:33:03.725+01:00",
+                    "updated_at": "2021-11-15T19:33:05.753+01:00"
                   }
                 },
                 "schema": {
@@ -12718,9 +12728,12 @@
             "description": "401",
             "content": {
               "application/json": {
-                "examples": {
-                  "Invalid secret key": {
-                    "value": "{\n  \"status\": \"error\",\n  \"message\": \"Invalid api key\",\n  \"data\": {\n    \"code\": \"E0107\",\n    \"message\": \"Invalid api key\"\n  }\n}"
+                "example": {
+                  "status": "error",
+                  "message": "Invalid api key",
+                  "data": {
+                    "code": "E0107",
+                    "message": "Invalid api key"
                   }
                 },
                 "schema": {
@@ -12756,9 +12769,12 @@
             "description": "409",
             "content": {
               "application/json": {
-                "examples": {
-                  "Result": {
-                    "value": "{\n  \"status\": \"error\",\n  \"message\": \"A sub account with this email already exists\",\n  \"data\": {\n    \"code\": \"E0101\",\n    \"message\": \"A sub account with this email already exists\"\n  }\n}"
+                "example": {
+                  "status": "error",
+                  "message": "A sub account with this email already exists",
+                  "data": {
+                    "code": "E0101",
+                    "message": "A sub account with this email already exists"
                   }
                 },
                 "schema": {
