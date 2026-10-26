@@ -388,76 +388,81 @@
                 ]
               },
               {
-                "group": "Wallets and addresses",
+                "group": "Wallet addresses",
                 "pages": [
-                  "api-reference/wallets/wallets-and-addresses/create-a-payment-address",
-                  "api-reference/wallets/wallets-and-addresses/fetch-a-payment-address-by-id",
-                  "api-reference/wallets/wallets-and-addresses/fetch-a-wallet",
-                  "api-reference/wallets/wallets-and-addresses/fetch-all-payment-addresses",
-                  "api-reference/wallets/wallets-and-addresses/fetch-all-wallets",
-                  "api-reference/wallets/wallets-and-addresses/fetch-the-current-payment-address"
+                  "api-reference/wallets/wallet-addresses/create-a-payment-address",
+                  "api-reference/wallets/wallet-addresses/fetch-a-payment-address-by-id",
+                  "api-reference/wallets/wallet-addresses/fetch-a-wallet",
+                  "api-reference/wallets/wallet-addresses/fetch-all-payment-addresses",
+                  "api-reference/wallets/wallet-addresses/fetch-all-wallets",
+                  "api-reference/wallets/wallet-addresses/fetch-the-current-payment-address"
                 ]
-              },
-              {
-                "group": "Deposits",
-                "pages": [
-                  "api-reference/wallets/deposits/fetch-a-deposit",
-                  "api-reference/wallets/deposits/fetch-deposits-across-all-sub-accounts",
-                  "api-reference/wallets/deposits/fetch-deposits-for-a-user"
-                ]
-              },
-              {
-                "group": "Withdrawals",
-                "pages": [
-                  "api-reference/wallets/withdrawals/cancel-a-withdrawal",
-                  "api-reference/wallets/withdrawals/create-a-withdrawal",
-                  "api-reference/wallets/withdrawals/fetch-a-withdrawal-by-reference"
-                ]
-              },
-              {
-                "group": "Orders",
-                "pages": [
-                  "api-reference/wallets/orders/cancel-an-order",
-                  "api-reference/wallets/orders/create-an-order",
-                  "api-reference/wallets/orders/fetch-all-orders",
-                  "api-reference/wallets/orders/fetch-an-order"
-                ]
-              },
-              {
-                "group": "Swap",
-                "pages": [
-                  "api-reference/wallets/swap/confirm-a-swap-quotation",
-                  "api-reference/wallets/swap/create-a-swap-quotation",
-                  "api-reference/wallets/swap/create-a-temporary-swap-quotation",
-                  "api-reference/wallets/swap/fetch-a-swap-transaction",
-                  "api-reference/wallets/swap/fetch-all-swap-transactions",
-                  "api-reference/wallets/swap/refresh-a-swap-quotation"
-                ]
-              },
+              }
+            ]
+          },
+          {
+            "group": "Deposits",
+            "pages": [
+              "api-reference/deposits/fetch-a-deposit",
+              "api-reference/deposits/fetch-deposits-across-all-sub-accounts",
+              "api-reference/deposits/fetch-deposits-for-a-user"
+            ]
+          },
+          {
+            "group": "Withdrawals",
+            "pages": [
+              "api-reference/withdrawals/cancel-a-withdrawal",
+              "api-reference/withdrawals/create-a-withdrawal",
+              "api-reference/withdrawals/fetch-a-withdrawal-by-reference"
+            ]
+          },
+          {
+            "group": "Swap",
+            "pages": [
+              "api-reference/swap/confirm-a-swap-quotation",
+              "api-reference/swap/create-a-swap-quotation",
+              "api-reference/swap/create-a-temporary-swap-quotation",
+              "api-reference/swap/fetch-a-swap-transaction",
+              "api-reference/swap/fetch-all-swap-transactions",
+              "api-reference/swap/refresh-a-swap-quotation"
+            ]
+          },
+          {
+            "group": "Orderbook",
+            "pages": [
               {
                 "group": "Markets",
                 "pages": [
-                  "api-reference/wallets/markets/fetch-a-market-ticker",
-                  "api-reference/wallets/markets/fetch-depth-data-for-a-market",
-                  "api-reference/wallets/markets/fetch-k-line-for-a-market",
-                  "api-reference/wallets/markets/fetch-k-line-with-pending-trades",
-                  "api-reference/wallets/markets/fetch-order-book-for-a-market",
-                  "api-reference/wallets/markets/list-all-markets",
-                  "api-reference/wallets/markets/list-market-tickers",
-                  "api-reference/wallets/markets/markets-summary"
+                  "api-reference/orderbook/markets/fetch-a-market-ticker",
+                  "api-reference/orderbook/markets/fetch-depth-data-for-a-market",
+                  "api-reference/orderbook/markets/fetch-k-line-for-a-market",
+                  "api-reference/orderbook/markets/fetch-k-line-with-pending-trades",
+                  "api-reference/orderbook/markets/fetch-order-book-for-a-market",
+                  "api-reference/orderbook/markets/list-all-markets",
+                  "api-reference/orderbook/markets/list-market-tickers",
+                  "api-reference/orderbook/markets/markets-summary"
                 ]
               },
               {
                 "group": "Trades",
                 "pages": [
-                  "api-reference/wallets/trades/fetch-recent-trades-for-a-market",
-                  "api-reference/wallets/trades/fetch-your-trades"
+                  "api-reference/orderbook/trades/fetch-recent-trades-for-a-market",
+                  "api-reference/orderbook/trades/fetch-your-trades"
+                ]
+              },
+              {
+                "group": "Orders",
+                "pages": [
+                  "api-reference/orderbook/orders/cancel-an-order",
+                  "api-reference/orderbook/orders/create-an-order",
+                  "api-reference/orderbook/orders/fetch-all-orders",
+                  "api-reference/orderbook/orders/fetch-an-order"
                 ]
               },
               {
                 "group": "Fees",
                 "pages": [
-                  "api-reference/wallets/fees/get-withdrawal-fees"
+                  "api-reference/orderbook/fees/get-withdrawal-fees"
                 ]
               }
             ]
