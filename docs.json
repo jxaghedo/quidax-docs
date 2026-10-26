@@ -328,47 +328,47 @@
             ]
           },
           {
-            "group": "Payments",
+            "group": "Basqet",
             "pages": [
-              "api-reference/payments/introduction",
+              "api-reference/basqet/introduction",
               {
                 "group": "Transactions",
                 "pages": [
-                  "api-reference/payments/transactions/initialize-a-transaction",
-                  "api-reference/payments/transactions/initiate-a-payment",
-                  "api-reference/payments/transactions/verify-a-transaction"
+                  "api-reference/basqet/transactions/initialize-a-transaction",
+                  "api-reference/basqet/transactions/initiate-a-payment",
+                  "api-reference/basqet/transactions/verify-a-transaction"
                 ]
               },
               {
                 "group": "Payment links",
                 "pages": [
-                  "api-reference/payments/payment-links/create-a-payment-link",
-                  "api-reference/payments/payment-links/list-payment-links",
-                  "api-reference/payments/payment-links/get-a-payment-link",
-                  "api-reference/payments/payment-links/update-a-payment-link",
-                  "api-reference/payments/payment-links/delete-a-payment-link"
+                  "api-reference/basqet/payment-links/create-a-payment-link",
+                  "api-reference/basqet/payment-links/list-payment-links",
+                  "api-reference/basqet/payment-links/get-a-payment-link",
+                  "api-reference/basqet/payment-links/update-a-payment-link",
+                  "api-reference/basqet/payment-links/delete-a-payment-link"
                 ]
               },
               {
                 "group": "Conversions and rates",
                 "pages": [
-                  "api-reference/payments/conversions-and-rates/get-an-exchange-rate",
-                  "api-reference/payments/conversions-and-rates/create-a-conversion-quote",
-                  "api-reference/payments/conversions-and-rates/execute-a-wallet-conversion",
-                  "api-reference/payments/conversions-and-rates/list-wallet-conversions"
+                  "api-reference/basqet/conversions-and-rates/get-an-exchange-rate",
+                  "api-reference/basqet/conversions-and-rates/create-a-conversion-quote",
+                  "api-reference/basqet/conversions-and-rates/execute-a-wallet-conversion",
+                  "api-reference/basqet/conversions-and-rates/list-wallet-conversions"
                 ]
               },
               {
                 "group": "Testing",
                 "pages": [
-                  "api-reference/payments/testing/update-a-test-transaction-status",
-                  "api-reference/payments/testing/resend-a-webhook-event"
+                  "api-reference/basqet/testing/update-a-test-transaction-status",
+                  "api-reference/basqet/testing/resend-a-webhook-event"
                 ]
               },
               {
                 "group": "Reference",
                 "pages": [
-                  "api-reference/payments/reference/list-supported-currencies"
+                  "api-reference/basqet/reference/list-supported-currencies"
                 ]
               }
             ]
