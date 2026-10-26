@@ -71,7 +71,30 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{\n  \"status\": \"success\",\n  \"data\": [\n    {\n      \"id\": 1,\n      \"name\": \"United States Dollar\",\n      \"slug\": \"USD\",\n      \"icon_url\": null,\n      \"type\": \"FIAT\",\n      \"created_at\": \"2022-01-19T13:41:40.000Z\",\n      \"updated_at\": \"2022-01-19T13:41:40.000Z\"\n    },\n    {\n      \"id\": 2,\n      \"name\": \"Nigerian Naira\",\n      \"slug\": \"NGN\",\n      \"icon_url\": null,\n      \"type\": \"FIAT\",\n      \"created_at\": \"2022-01-19T13:41:40.000Z\",\n      \"updated_at\": \"2022-01-19T13:41:40.000Z\"\n    }\n  ],\n  \"meta\": {}\n}"
+                    "value": {
+                      "status": "success",
+                      "data": [
+                        {
+                          "id": 1,
+                          "name": "United States Dollar",
+                          "slug": "USD",
+                          "icon_url": null,
+                          "type": "FIAT",
+                          "created_at": "2022-01-19T13:41:40.000Z",
+                          "updated_at": "2022-01-19T13:41:40.000Z"
+                        },
+                        {
+                          "id": 2,
+                          "name": "Nigerian Naira",
+                          "slug": "NGN",
+                          "icon_url": null,
+                          "type": "FIAT",
+                          "created_at": "2022-01-19T13:41:40.000Z",
+                          "updated_at": "2022-01-19T13:41:40.000Z"
+                        }
+                      ],
+                      "meta": {}
+                    }
                   }
                 },
                 "schema": {
@@ -130,7 +153,16 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{\n  \"status\": \"error\",\n  \"message\": \"Validation Error\",\n  \"meta\": {},\n  \"data\": {\n    \"type\": {\n      \"message\": \"type must be one of [FIAT, CRYPTO]\"\n    }\n  }\n}"
+                    "value": {
+                      "status": "error",
+                      "message": "Validation Error",
+                      "meta": {},
+                      "data": {
+                        "type": {
+                          "message": "type must be one of [FIAT, CRYPTO]"
+                        }
+                      }
+                    }
                   }
                 },
                 "schema": {
@@ -232,7 +264,26 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{\n  \"status\": \"success\",\n  \"data\": {\n    \"id\": 42,\n    \"reference\": \"bq_pL2upBiLivl_o1Zg0\",\n    \"amount_paid\": null,\n    \"status\": \"INITIATED\",\n    \"description\": null,\n    \"initialized_amount\": 1000,\n    \"payment_amount\": null,\n    \"payment_address\": null,\n    \"payment_currency\": null,\n    \"initialized_currency\": 2,\n    \"merchant\": {\n      \"id\": 10,\n      \"name\": \"Appstate\"\n    }\n  },\n  \"meta\": {}\n}"
+                    "value": {
+                      "status": "success",
+                      "data": {
+                        "id": 42,
+                        "reference": "bq_pL2upBiLivl_o1Zg0",
+                        "amount_paid": null,
+                        "status": "INITIATED",
+                        "description": null,
+                        "initialized_amount": 1000,
+                        "payment_amount": null,
+                        "payment_address": null,
+                        "payment_currency": null,
+                        "initialized_currency": 2,
+                        "merchant": {
+                          "id": 10,
+                          "name": "Appstate"
+                        }
+                      },
+                      "meta": {}
+                    }
                   }
                 },
                 "schema": {
@@ -304,7 +355,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -358,7 +409,27 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{\n  \"status\": \"success\",\n  \"data\": {\n    \"qrCode\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAYAAAB1PADUAAAAAklEQVR4AewaftIAAAThSURBVO3BQY4bSRAEwfAC//9l3znmqYBGJ6VZIczwR6qWnFQtOqladFK16KRq0UnVopOqRSdVi06qFp1ULTqpWnRSteikatFJ1aKTqkUnVYs+eQnIn6RmE5BJzRNAnlAzAZnUTED+JDVvnFQtOqladFK16JNlajYBeQPIjZobIJOaSc0bap5QswnIppOqRSdVi06qFn3yZUCeUPMEkEnNpGYCMgG5UTMBeULNNwF5Qs03nVQtOqladFK16JN/HJBJzQ2QCcikZgIyqZmATGomIJOa/7OTqkUnVYtOqhZ98o9T84SaGyA3QJ5Q8y85qVp0UrXopGrRJ1+m5m8CMql5Asik5gkg36TmNzmpWnRSteikatEny4D8nwCZ1DwBZFLzBJBJzQ2Q3+ykatFJ1aKTqkX4I/9jQCY1E5A31ExAJjVPAJnU/EtOqhadVC06qVr0yUtAJjUTkE1qJjUTkEnNDZAbIG8AmdRMQCY1E5BNar7ppGrRSdWik6pF+CN/EZBJzQ2QSc0NkBs1TwC5UfMGkBs1E5BJzQ2QGzVvnFQtOqladFK16JMvAzKpuQHyBpBJzQTkDTVvAHlCzY2aCciNmm86qVp0UrXopGrRJy8BuVEzAZnUPAHkRs0bQN5Qc6PmBsgNkCfUTEBu1LxxUrXopGrRSdWiT34ZIDdqboA8AWRScwPkCSCTmgnIpOZGzRtqvumkatFJ1aKTqkWf/GFqJiA3ap5Q8wSQGyA3aiYgT6h5AsgTam6ATGreOKladFK16KRqEf7IIiA3ap4AMqm5ATKpmYBMap4AcqPmBsikZgLyhJoJyKRmAjKp2XRSteikatFJ1aJPlqm5ATKpuVEzAXkCyKTmBsik5kbNBORGzRtqJiCTmr/ppGrRSdWik6pF+CMvAJnUTEAmNTdAbtRMQG7UTEAmNTdAJjVvALlRcwNkUjMBeUPNGydVi06qFp1ULfrkl1MzAZnUTEBu1ExAJjWTmgnIpOYGyBNAJjWTmgnIjZobIJtOqhadVC06qVr0yV8GZFIzAZnU/CZAJjWTmgnIpOYGyBtAJjWTmk0nVYtOqhadVC365JcBMqmZgDwB5EbNBGRSc6NmAjKpmdRMQCY1N2pugExqJiCTmk0nVYtOqhadVC365MvUTEAmNTdAJjU3QCY1N0AmNROQGyCTmgnIE0BugNyomYD8SSdVi06qFp1ULcIf+R8DMqn5JiA3am6A3Kh5Asik5gkgk5o3TqoWnVQtOqla9MlLQP4kNZOaGyBPqJmATGqeADKpmYDcAJnU3ACZ1ExAJjWbTqoWnVQtOqla9MkyNZuA3AC5UTMBeULNBOQNIE+oeULN33RSteikatFJ1aJPvgzIE2reUDMBmdRMQN5Q8waQCcgbQG7UTEAmNW+cVC06qVp0UrXok38MkL8JyKTmRs0TQCY1TwCZ1Gw6qVp0UrXopGrRJ/84NROQSc0E5Akgk5obIJOaJ9RMQH6Tk6pFJ1WLTqoWffJlar5JzSY1E5AbNROQSc2k5pvU3AD5ppOqRSdVi06qFn2yDMifBGRSc6NmAnKjZgIyAZnUTEBu1ExAbtTcALlR800nVYtOqhadVC3CH6laclK16KRq0UnVopOqRSdVi06qFp1ULTqpWnRSteikatFJ1aKTqkUnVYtOqhadVC36D4yuQj9aZj6fAAAAAElFTkSuQmCC\",\n    \"id\": 118,\n    \"reference\": \"bq_J7WCL-EC4G3OhJUyK\",\n    \"amount_paid\": null,\n    \"status\": \"PENDING\",\n    \"description\": null,\n    \"initialized_amount\": 1000,\n    \"payment_amount\": 1.74342681,\n    \"payment_address\": \"0x6cE7a3093fD6FF69B26B8bEC1d7dA4BE07998d01\",\n    \"payment_currency\": 3,\n    \"initialized_currency\": 2,\n    \"merchant\": {\n      \"id\": 10,\n      \"name\": \"Appstate\"\n    }\n  },\n  \"meta\": {}\n}"
+                    "value": {
+                      "status": "success",
+                      "data": {
+                        "qrCode": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAYAAAB1PADUAAAAAklEQVR4AewaftIAAAThSURBVO3BQY4bSRAEwfAC//9l3znmqYBGJ6VZIczwR6qWnFQtOqladFK16KRq0UnVopOqRSdVi06qFp1ULTqpWnRSteikatFJ1aKTqkUnVYs+eQnIn6RmE5BJzRNAnlAzAZnUTED+JDVvnFQtOqladFK16JNlajYBeQPIjZobIJOaSc0bap5QswnIppOqRSdVi06qFn3yZUCeUPMEkEnNpGYCMgG5UTMBeULNNwF5Qs03nVQtOqladFK16JN/HJBJzQ2QCcikZgIyqZmATGomIJOa/7OTqkUnVYtOqhZ98o9T84SaGyA3QJ5Q8y85qVp0UrXopGrRJ1+m5m8CMql5Asik5gkg36TmNzmpWnRSteikatEny4D8nwCZ1DwBZFLzBJBJzQ2Q3+ykatFJ1aKTqkX4I/9jQCY1E5A31ExAJjVPAJnU/EtOqhadVC06qVr0yUtAJjUTkE1qJjUTkEnNDZAbIG8AmdRMQCY1E5BNar7ppGrRSdWik6pF+CN/EZBJzQ2QSc0NkBs1TwC5UfMGkBs1E5BJzQ2QGzVvnFQtOqladFK16JMvAzKpuQHyBpBJzQTkDTVvAHlCzY2aCciNmm86qVp0UrXopGrRJy8BuVEzAZnUPAHkRs0bQN5Qc6PmBsgNkCfUTEBu1LxxUrXopGrRSdWiT34ZIDdqboA8AWRScwPkCSCTmgnIpOZGzRtqvumkatFJ1aKTqkWf/GFqJiA3ap5Q8wSQGyA3aiYgT6h5AsgTam6ATGreOKladFK16KRqEf7IIiA3ap4AMqm5ATKpmYBMap4AcqPmBsikZgLyhJoJyKRmAjKp2XRSteikatFJ1aJPlqm5ATKpuVEzAXkCyKTmBsik5kbNBORGzRtqJiCTmr/ppGrRSdWik6pF+CMvAJnUTEAmNTdAbtRMQG7UTEAmNTdAJjVvALlRcwNkUjMBeUPNGydVi06qFp1ULfrkl1MzAZnUTEBu1ExAJjWTmgnIpOYGyBNAJjWTmgnIjZobIJtOqhadVC06qVr0yV8GZFIzAZnU/CZAJjWTmgnIpOYGyBtAJjWTmk0nVYtOqhadVC365JcBMqmZgDwB5EbNBGRSc6NmAjKpmdRMQCY1N2pugExqJiCTmk0nVYtOqhadVC365MvUTEAmNTdAJjU3QCY1N0AmNROQGyCTmgnIE0BugNyomYD8SSdVi06qFp1ULcIf+R8DMqn5JiA3am6A3Kh5Asik5gkgk5o3TqoWnVQtOqla9MlLQP4kNZOaGyBPqJmATGqeADKpmYDcAJnU3ACZ1ExAJjWbTqoWnVQtOqla9MkyNZuA3AC5UTMBeULNBOQNIE+oeULN33RSteikatFJ1aJPvgzIE2reUDMBmdRMQN5Q8waQCcgbQG7UTEAmNW+cVC06qVp0UrXok38MkL8JyKTmRs0TQCY1TwCZ1Gw6qVp0UrXopGrRJ/84NROQSc0E5Akgk5obIJOaJ9RMQH6Tk6pFJ1WLTqoWffJlar5JzSY1E5AbNROQSc2k5pvU3AD5ppOqRSdVi06qFn2yDMifBGRSc6NmAnKjZgIyAZnUTEBu1ExAbtTcALlR800nVYtOqhadVC3CH6laclK16KRq0UnVopOqRSdVi06qFp1ULTqpWnRSteikatFJ1aKTqkUnVYtOqhadVC36D4yuQj9aZj6fAAAAAElFTkSuQmCC",
+                        "id": 118,
+                        "reference": "bq_J7WCL-EC4G3OhJUyK",
+                        "amount_paid": null,
+                        "status": "PENDING",
+                        "description": null,
+                        "initialized_amount": 1000,
+                        "payment_amount": 1.74342681,
+                        "payment_address": "0x6cE7a3093fD6FF69B26B8bEC1d7dA4BE07998d01",
+                        "payment_currency": 3,
+                        "initialized_currency": 2,
+                        "merchant": {
+                          "id": 10,
+                          "name": "Appstate"
+                        }
+                      },
+                      "meta": {}
+                    }
                   }
                 },
                 "schema": {
@@ -445,7 +516,16 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{\n  \"status\": \"error\",\n  \"message\": \"Validation Error\",\n  \"meta\": {},\n  \"data\": {\n    \"transaction_id\": {\n      \"message\": \"transaction_id must be a number\"\n    }\n  }\n}"
+                    "value": {
+                      "status": "error",
+                      "message": "Validation Error",
+                      "meta": {},
+                      "data": {
+                        "transaction_id": {
+                          "message": "transaction_id must be a number"
+                        }
+                      }
+                    }
                   }
                 },
                 "schema": {
@@ -488,7 +568,11 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{\n  \"status\": \"error\",\n  \"message\": \"resource not found\",\n  \"path\": \"/v1/transaction/ccc/pay\"\n}"
+                    "value": {
+                      "status": "error",
+                      "message": "resource not found",
+                      "path": "/v1/transaction/ccc/pay"
+                    }
                   }
                 },
                 "schema": {
@@ -517,7 +601,11 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{\n  \"status\": \"error\",\n  \"message\": \"The transaction is not initiated\",\n  \"meta\": {}\n}"
+                    "value": {
+                      "status": "error",
+                      "message": "The transaction is not initiated",
+                      "meta": {}
+                    }
                   }
                 },
                 "schema": {
@@ -569,7 +657,13 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{\n  \"status\": \"success\",\n  \"data\": {\n    \"status\": \"SUCCESSFUL\"\n  },\n  \"meta\": {}\n}"
+                    "value": {
+                      "status": "success",
+                      "data": {
+                        "status": "SUCCESSFUL"
+                      },
+                      "meta": {}
+                    }
                   }
                 },
                 "schema": {
@@ -603,7 +697,16 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{\n  \"status\": \"error\",\n  \"message\": \"Validation Error\",\n  \"meta\": {},\n  \"data\": {\n    \"transaction_id\": {\n      \"message\": \"transaction_id must be a number\"\n    }\n  }\n}"
+                    "value": {
+                      "status": "error",
+                      "message": "Validation Error",
+                      "meta": {},
+                      "data": {
+                        "transaction_id": {
+                          "message": "transaction_id must be a number"
+                        }
+                      }
+                    }
                   }
                 },
                 "schema": {
@@ -689,7 +792,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -705,7 +808,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -744,7 +847,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -760,7 +863,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -861,7 +964,22 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{\n  \"message\": \"Payment Link created\",\n  \"id\": \"bq_pl_aBcDeFgHiJkLmNo\",\n  \"title\": \"Invoice #1024\",\n  \"link_type\": \"static\",\n  \"currency\": \"USD\",\n  \"amount\": 150.0,\n  \"payment_url\": \"https://pay.basqet.com/pl_aBcDeFgHiJkLmNo\",\n  \"metadata\": {\n    \"order_id\": \"order_1024\",\n    \"customer_tier\": \"premium\"\n  },\n  \"created_at\": \"2026-04-22T10:30:00.000Z\",\n  \"last_used\": null,\n  \"deleted_at\": null\n}"
+                    "value": {
+                      "message": "Payment Link created",
+                      "id": "bq_pl_aBcDeFgHiJkLmNo",
+                      "title": "Invoice #1024",
+                      "link_type": "static",
+                      "currency": "USD",
+                      "amount": 150.0,
+                      "payment_url": "https://pay.basqet.com/pl_aBcDeFgHiJkLmNo",
+                      "metadata": {
+                        "order_id": "order_1024",
+                        "customer_tier": "premium"
+                      },
+                      "created_at": "2026-04-22T10:30:00.000Z",
+                      "last_used": null,
+                      "deleted_at": null
+                    }
                   }
                 },
                 "schema": {
@@ -926,7 +1044,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -1039,7 +1157,27 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{\n  \"data\": [\n    {\n      \"id\": \"bq_pl_aBcDeFgHiJkLmNo\",\n      \"title\": \"Invoice #1024\",\n      \"link_type\": \"static\",\n      \"currency\": \"USD\",\n      \"amount\": 150.0,\n      \"payment_url\": \"https://pay.basqet.com/pl_aBcDeFgHiJkLmNo\",\n      \"metadata\": null,\n      \"created_at\": \"2026-04-22T10:30:00.000Z\",\n      \"last_used\": null,\n      \"deleted_at\": null\n    }\n  ],\n  \"meta\": {\n    \"limit\": 20,\n    \"count\": 1,\n    \"hasNext\": false\n  }\n}"
+                    "value": {
+                      "data": [
+                        {
+                          "id": "bq_pl_aBcDeFgHiJkLmNo",
+                          "title": "Invoice #1024",
+                          "link_type": "static",
+                          "currency": "USD",
+                          "amount": 150.0,
+                          "payment_url": "https://pay.basqet.com/pl_aBcDeFgHiJkLmNo",
+                          "metadata": null,
+                          "created_at": "2026-04-22T10:30:00.000Z",
+                          "last_used": null,
+                          "deleted_at": null
+                        }
+                      ],
+                      "meta": {
+                        "limit": 20,
+                        "count": 1,
+                        "hasNext": false
+                      }
+                    }
                   }
                 },
                 "schema": {
@@ -1116,7 +1254,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -1156,7 +1294,18 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{\n  \"id\": \"bq_pl_aBcDeFgHiJkLmNo\",\n  \"title\": \"Invoice #1024\",\n  \"link_type\": \"static\",\n  \"currency\": \"USD\",\n  \"amount\": 150.0,\n  \"payment_url\": \"https://pay.basqet.com/pl_aBcDeFgHiJkLmNo\",\n  \"metadata\": null,\n  \"created_at\": \"2026-04-22T10:30:00.000Z\",\n  \"last_used\": null,\n  \"deleted_at\": null\n}"
+                    "value": {
+                      "id": "bq_pl_aBcDeFgHiJkLmNo",
+                      "title": "Invoice #1024",
+                      "link_type": "static",
+                      "currency": "USD",
+                      "amount": 150.0,
+                      "payment_url": "https://pay.basqet.com/pl_aBcDeFgHiJkLmNo",
+                      "metadata": null,
+                      "created_at": "2026-04-22T10:30:00.000Z",
+                      "last_used": null,
+                      "deleted_at": null
+                    }
                   }
                 },
                 "schema": {
@@ -1205,7 +1354,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -1308,7 +1457,18 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{\n  \"id\": \"bq_pl_aBcDeFgHiJkLmNo\",\n  \"title\": \"Invoice #1024 (Updated)\",\n  \"link_type\": \"static\",\n  \"currency\": \"USD\",\n  \"amount\": 200.0,\n  \"payment_url\": \"https://pay.basqet.com/pl_aBcDeFgHiJkLmNo\",\n  \"metadata\": null,\n  \"created_at\": \"2026-04-22T10:30:00.000Z\",\n  \"last_used\": null,\n  \"deleted_at\": null\n}"
+                    "value": {
+                      "id": "bq_pl_aBcDeFgHiJkLmNo",
+                      "title": "Invoice #1024 (Updated)",
+                      "link_type": "static",
+                      "currency": "USD",
+                      "amount": 200.0,
+                      "payment_url": "https://pay.basqet.com/pl_aBcDeFgHiJkLmNo",
+                      "metadata": null,
+                      "created_at": "2026-04-22T10:30:00.000Z",
+                      "last_used": null,
+                      "deleted_at": null
+                    }
                   }
                 },
                 "schema": {
@@ -1357,7 +1517,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -1395,7 +1555,11 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{\n  \"id\": \"bq_pl_aBcDeFgHiJkLmNo\",\n  \"status\": \"deleted\",\n  \"deleted_at\": \"2026-04-22T14:00:00.000Z\"\n}"
+                    "value": {
+                      "id": "bq_pl_aBcDeFgHiJkLmNo",
+                      "status": "deleted",
+                      "deleted_at": "2026-04-22T14:00:00.000Z"
+                    }
                   }
                 },
                 "schema": {
@@ -1424,7 +1588,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -1505,7 +1669,18 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{\n  \"status\": \"success\",\n  \"data\": {\n    \"quote_id\": \"cq_x9R4mL2pQ8sT7vA\",\n    \"from_currency\": \"NGN\",\n    \"to_currency\": \"USDT\",\n    \"from_amount\": 14000,\n    \"to_amount\": 10,\n    \"exchange_rate\": 0.000714285714285714,\n    \"expires_at\": \"2026-05-15T12:05:30.000Z\"\n  }\n}"
+                    "value": {
+                      "status": "success",
+                      "data": {
+                        "quote_id": "cq_x9R4mL2pQ8sT7vA",
+                        "from_currency": "NGN",
+                        "to_currency": "USDT",
+                        "from_amount": 14000,
+                        "to_amount": 10,
+                        "exchange_rate": 0.000714285714285714,
+                        "expires_at": "2026-05-15T12:05:30.000Z"
+                      }
+                    }
                   }
                 },
                 "schema": {
@@ -1562,7 +1737,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
@@ -1614,7 +1789,20 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{\n  \"status\": \"success\",\n  \"data\": {\n    \"rate_id\": \"rate_p8Mz6BnL3rQx2Va\",\n    \"base_currency\": \"USD\",\n    \"quote_currency\": \"NGN\",\n    \"rate\": 1500,\n    \"base_amount\": 100,\n    \"quote_amount\": 150000,\n    \"expires_at\": \"2026-05-15T12:05:30.000Z\",\n    \"expiry_in_seconds\": 30,\n    \"created_at\": \"2026-05-15T12:05:00.000Z\"\n  }\n}"
+                    "value": {
+                      "status": "success",
+                      "data": {
+                        "rate_id": "rate_p8Mz6BnL3rQx2Va",
+                        "base_currency": "USD",
+                        "quote_currency": "NGN",
+                        "rate": 1500,
+                        "base_amount": 100,
+                        "quote_amount": 150000,
+                        "expires_at": "2026-05-15T12:05:30.000Z",
+                        "expiry_in_seconds": 30,
+                        "created_at": "2026-05-15T12:05:00.000Z"
+                      }
+                    }
                   }
                 },
                 "schema": {
@@ -1680,7 +1868,7 @@
               "application/json": {
                 "examples": {
                   "Result": {
-                    "value": "{}"
+                    "value": {}
                   }
                 },
                 "schema": {
